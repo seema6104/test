@@ -12,6 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 public class HelperClass {
 	
 	WebDriver driver;
@@ -56,7 +57,9 @@ public class HelperClass {
 		  driver.findElement(By.id("password")).sendKeys(uName);
 		  driver.findElement(By.name("admin")).click();
 	}
-	 public void doctorLogin(String uName, String pWord)
+	
+	
+	public void doctorLogin(String uName, String pWord)
 	 {
 		 driver.findElement(By.name("pusername")).sendKeys(uName);
 		 driver.findElement(By.name("ppassword")).sendKeys(pWord);
