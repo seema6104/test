@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.iit.mmp.patiengtmodule.tests.EditProfileTest">
+      <class name="org.iit.mmp.patiengtmodule.tests.ViewHistoryTest">
         <methods>
           <include name="launchdriver"/>
-          <include name="editInvalidDetails"/>
           <include name="closeBrowser"/>
+          <include name="viewHistory"/>
         </methods>
-      </class> <!-- org.iit.mmp.patiengtmodule.tests.EditProfileTest -->
+      </class> <!-- org.iit.mmp.patiengtmodule.tests.ViewHistoryTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
