@@ -18,7 +18,7 @@ public class HelperClass {
 	WebDriver driver;
 	public HelperClass(WebDriver driver)
 	{
-		this.driver = driver;
+	   this.driver = driver;
 	}
 	public WebDriver switchToAFrameAvailable(String frame,int timeInSecs)
 	{
@@ -26,13 +26,17 @@ public class HelperClass {
 		driver =wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frame));
 		return driver;
 	}
-	public void launchPatientModule(String url)
+	public void launchModule(String url)
 	{
 		driver.get(url);
 	}
 	public void navigateToModule(String moduleName)
 	{
 		driver.findElement(By.xpath("//span[contains(text(),'"+moduleName+"')]")).click();			
+	}
+	public void navigateToAdminModule(String admModuleName)
+	{
+		driver.findElement(By.xpath("//span[contains(text(),'"+admModuleName+"')]"));
 	}
 	public void captureScreenshot(String tc_Name) throws IOException
 	{
@@ -42,7 +46,7 @@ public class HelperClass {
 		String destPath = System.getProperty("user.dir")+"\\screenshots\\"+tc_Name+Calendar.getInstance().getTimeInMillis()+".jpg";
 		File destFile = new File(destPath);
 		FileUtils.copyFile(srcFile, destFile);
-		System.out.println("Exiting the Screenshot method");
+		System.out.println("Exiting the Screenshot   method");
 		
 	}
 	public void patientLogin(String uName,String pWord)

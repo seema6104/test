@@ -3,7 +3,7 @@ package org.iit.mmp.patientmlodule.pages;
 import org.iit.util.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.Test;
+
 
 
 public class SearchSamptonsPage extends TestBase{

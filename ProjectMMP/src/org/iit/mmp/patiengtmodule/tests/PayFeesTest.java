@@ -19,7 +19,7 @@ public class PayFeesTest extends TestBase{
 	{
 		helper = new HelperClass(driver);
 		PayFeesPage pfPage = new PayFeesPage(driver);
-		helper.launchPatientModule(url);
+		helper.launchModule(url);
 		helper.patientLogin(uName, pwd);
 		HashMap<String, String> hmap = pfPage.addingData();
 		

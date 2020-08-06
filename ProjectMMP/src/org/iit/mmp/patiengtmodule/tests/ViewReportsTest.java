@@ -18,7 +18,7 @@ public class ViewReportsTest extends TestBase{
         Thread.sleep(2000);
         driver.findElement(By.linkText("Login")).click();
 		helper.patientLogin("ria1", "Ria12345");
-		helper.navigateToModule(" Profile ");
+		helper.navigateToModule("Profile");
 		Thread.sleep(2000);
 		ViewReportsPage vrPage = new ViewReportsPage(driver);
 		vrPage.addData();

@@ -20,7 +20,6 @@ import org.testng.annotations.Test;
 	  {
 	saPage= new ScheduleAppointmentPage(driver);
 	helper= new HelperClass(driver);
-	helper.launchPatientModule(url);
 	helper.patientLogin(uname, pword);
 	helper.navigateToModule("Schedule Appointment");
 	HashMap<String, String> hMap = saPage.bookAnAppointment(drName);

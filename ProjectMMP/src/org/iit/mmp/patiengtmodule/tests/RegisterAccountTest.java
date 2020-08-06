@@ -19,8 +19,9 @@ import org.testng.annotations.Test;
 		 
 	helper= new HelperClass(driver);
     RegisterAccountPage regPage = new RegisterAccountPage(driver);
-	helper.launchPatientModule(url);	  
+	helper.launchModule(url);	  
     HashMap<String, String> hMap = regPage.fillData();
+   // helper.captureScreenshot("US_002 Validation of the Registration Func");
     String actual= regPage.readSuccessMsg();
     System.out.println("Actual message: " +actual);
     String expected = "Thank you for registering with MMP.";

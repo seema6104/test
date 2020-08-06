@@ -18,7 +18,9 @@ public class TestBase {
 	                        
 	 public String url1 = "http://96.84.175.78/MMP-Release1-Integrated-Build.2.4.000/";
      public String url2= "http://96.84.175.78/MMP-Release1-Integrated-Build.2.4.000/portal/profile.php";
+     public String adminUrl = "http://96.84.175.78/MMP-Release1-Integrated-Build.2.4.000/admin/login.php";
 	 public WebDriver driver;
+	  
 	   @BeforeTest
 	   public void launchdriver() throws Exception {
 	    WebDriverManager.chromedriver().setup();
@@ -28,7 +30,7 @@ public class TestBase {
         driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-		driver.get(url1);
+		driver.get(url2);
 	    
     	}
 

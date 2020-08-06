@@ -19,21 +19,19 @@ public class ScheduleAppointmentPage {
 	  By timeDetails = By.xpath("//a[contains(text(),'Time')]");
 	  By symDetails = By.xpath("//a[contains(text(),'Symptoms')]");
 	  By headerDetails = By.xpath("(//h3[@class='panel-title'])[2]");
-	  
-	  
-	 WebDriver driver;
-	 HelperClass helper;
-	 
-	 public ScheduleAppointmentPage(WebDriver driver)
-	 {
+	  WebDriver driver;
+	  HelperClass helper;
+	  public ScheduleAppointmentPage(WebDriver driver)
+	  {
 		this.driver=driver;
 		helper = new HelperClass(driver);
-	 }
+	  
+	  }
 	 
 	 public HashMap<String, String> bookAnAppointment(String doctorName)
 	 {
-		HashMap<String, String> hMap = new HashMap<String, String>();
 		
+		HashMap<String, String> hMap = new HashMap<String, String>();
 		String time = "10Am";
 		String dateOfApp = AppLibrary.getFutureDate(20);
 		String sym = "Booking an appointment " +doctorName+" on date "+dateOfApp+" for symptom fever";
