@@ -119,7 +119,7 @@ public class OpenMRSHomePageTestCase {
     		  }
 	      
 	     
-    	   // @AfterTest
+    	   @AfterTest
     		public void closeBrowser() {
 	    	   driver.quit();
 	    	   

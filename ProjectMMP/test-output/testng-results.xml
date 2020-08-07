@@ -2,64 +2,49 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-30T23:17:28 EDT" name="Default suite" finished-at="2020-07-30T23:18:17 EDT" duration-ms="48464">
+  <suite started-at="2020-08-07T15:11:31 EDT" name="Default suite" finished-at="2020-08-07T15:11:45 EDT" duration-ms="13914">
     <groups>
+      <group name="ADM_009">
+        <method signature="CreateFeeTabTest_ADM_009.createFee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:org.iit.mmp.adminModule.Tests.CreateFeeTabTest_ADM_009@4313f5bc]" name="createFee" class="org.iit.mmp.adminModule.Tests.CreateFeeTabTest_ADM_009"/>
+      </group> <!-- ADM_009 -->
+      <group name="patientmodule">
+        <method signature="CreateFeeTabTest_ADM_009.createFee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:org.iit.mmp.adminModule.Tests.CreateFeeTabTest_ADM_009@4313f5bc]" name="createFee" class="org.iit.mmp.adminModule.Tests.CreateFeeTabTest_ADM_009"/>
+      </group> <!-- patientmodule -->
+      <group name="UI">
+        <method signature="CreateFeeTabTest_ADM_009.createFee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:org.iit.mmp.adminModule.Tests.CreateFeeTabTest_ADM_009@4313f5bc]" name="createFee" class="org.iit.mmp.adminModule.Tests.CreateFeeTabTest_ADM_009"/>
+      </group> <!-- UI -->
+      <group name="regression">
+        <method signature="CreateFeeTabTest_ADM_009.createFee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:org.iit.mmp.adminModule.Tests.CreateFeeTabTest_ADM_009@4313f5bc]" name="createFee" class="org.iit.mmp.adminModule.Tests.CreateFeeTabTest_ADM_009"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="CreateFeeTabTest_ADM_009.createFee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:org.iit.mmp.adminModule.Tests.CreateFeeTabTest_ADM_009@4313f5bc]" name="createFee" class="org.iit.mmp.adminModule.Tests.CreateFeeTabTest_ADM_009"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2020-07-30T23:17:28 EDT" name="Default test" finished-at="2020-07-30T23:18:17 EDT" duration-ms="48464">
-      <class name="org.iit.mmp.patiengtmodule.tests.ViewHistoryTest">
-        <test-method is-config="true" signature="launchdriver()[pri:0, instance:org.iit.mmp.patiengtmodule.tests.ViewHistoryTest@1f0f1111]" started-at="2020-07-30T23:17:28 EDT" name="launchdriver" finished-at="2020-07-30T23:17:41 EDT" duration-ms="12446" status="PASS">
+    <test started-at="2020-08-07T15:11:31 EDT" name="Default test" finished-at="2020-08-07T15:11:45 EDT" duration-ms="13914">
+      <class name="org.iit.mmp.adminModule.Tests.CreateFeeTabTest_ADM_009">
+        <test-method is-config="true" signature="launchdriver()[pri:0, instance:org.iit.mmp.adminModule.Tests.CreateFeeTabTest_ADM_009@4313f5bc]" started-at="2020-08-07T15:11:31 EDT" name="launchdriver" finished-at="2020-08-07T15:11:39 EDT" duration-ms="8188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchdriver -->
-        <test-method signature="viewHistory()[pri:0, instance:org.iit.mmp.patiengtmodule.tests.ViewHistoryTest@1f0f1111]" started-at="2020-07-30T23:17:41 EDT" name="viewHistory" finished-at="2020-07-30T23:18:11 EDT" duration-ms="30073" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="createFee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:org.iit.mmp.adminModule.Tests.CreateFeeTabTest_ADM_009@4313f5bc]" started-at="2020-08-07T15:11:39 EDT" name="createFee" description="ADM_009 Creating patient fee for service" finished-at="2020-08-07T15:11:39 EDT" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
-  (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'LAPTOP-T7Q1UKLJ', ip: '192.168.0.38', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\seema\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: a432e8feb33073b723256d0a04a09a2c
-*** Element info: {Using=id, value=username}]]>
+              <![CDATA[
+Parameter 'adminurl' is required by @Test on method createFee but has not been marked @Optional or defined
+in C:\Users\seema\AppData\Local\Temp\testng-eclipse--1361733056\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
-  (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'LAPTOP-T7Q1UKLJ', ip: '192.168.0.38', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\seema\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: a432e8feb33073b723256d0a04a09a2c
-*** Element info: {Using=id, value=username}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.iit.mmp.helper.HelperClass.patientLogin(HelperClass.java:50)
-at org.iit.mmp.patiengtmodule.tests.ViewHistoryTest.viewHistory(ViewHistoryTest.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'adminurl' is required by @Test on method createFee but has not been marked @Optional or defined
+in C:\Users\seema\AppData\Local\Temp\testng-eclipse--1361733056\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:875)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:788)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -81,15 +66,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- viewHistory -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:org.iit.mmp.patiengtmodule.tests.ViewHistoryTest@1f0f1111]" started-at="2020-07-30T23:18:11 EDT" name="closeBrowser" finished-at="2020-07-30T23:18:17 EDT" duration-ms="5888" status="PASS">
+        </test-method> <!-- createFee -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:org.iit.mmp.adminModule.Tests.CreateFeeTabTest_ADM_009@4313f5bc]" started-at="2020-08-07T15:11:39 EDT" name="closeBrowser" finished-at="2020-08-07T15:11:45 EDT" duration-ms="5680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- org.iit.mmp.patiengtmodule.tests.ViewHistoryTest -->
+      </class> <!-- org.iit.mmp.adminModule.Tests.CreateFeeTabTest_ADM_009 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

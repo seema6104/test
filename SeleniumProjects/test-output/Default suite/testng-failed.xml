@@ -5,6 +5,7 @@
     <classes>
       <class name="openMRSHealthCareProject.OpenMRSHomePageTestCase">
         <methods>
+          <include name="closeBrowser"/>
           <include name="LaunchBrowser"/>
           <include name="regisPaitent"/>
         </methods>
