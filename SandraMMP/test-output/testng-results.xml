@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-08-11T16:38:08 EDT" name="Default suite" finished-at="2020-08-11T16:38:35 EDT" duration-ms="27316">
+    <groups>
+    </groups>
+    <test started-at="2020-08-11T16:38:08 EDT" name="Default test" finished-at="2020-08-11T16:38:35 EDT" duration-ms="27316">
+      <class name="org.iit.sandrammp.patientModuleTest.SearchSymptomsTest">
+        <test-method is-config="true" signature="launchdriver()[pri:0, instance:org.iit.sandrammp.patientModuleTest.SearchSymptomsTest@49c386c8]" started-at="2020-08-11T16:38:08 EDT" name="launchdriver" finished-at="2020-08-11T16:38:14 EDT" duration-ms="6152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchdriver -->
+        <test-method signature="validSearchSymptoms()[pri:0, instance:org.iit.sandrammp.patientModuleTest.SearchSymptomsTest@49c386c8]" started-at="2020-08-11T16:38:14 EDT" name="validSearchSymptoms" finished-at="2020-08-11T16:38:29 EDT" duration-ms="15419" status="FAIL">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class org.openqa.selenium.remote.RemoteWebElement cannot be cast to class java.util.List (org.openqa.selenium.remote.RemoteWebElement is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class org.openqa.selenium.remote.RemoteWebElement cannot be cast to class java.util.List (org.openqa.selenium.remote.RemoteWebElement is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')
+at org.iit.sandrammp.patientModuleTest.SearchSymptomsTest.validSearchSymptoms(SearchSymptomsTest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validSearchSymptoms -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:org.iit.sandrammp.patientModuleTest.SearchSymptomsTest@49c386c8]" started-at="2020-08-11T16:38:29 EDT" name="closeBrowser" finished-at="2020-08-11T16:38:35 EDT" duration-ms="5703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- org.iit.sandrammp.patientModuleTest.SearchSymptomsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

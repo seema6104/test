@@ -1,24 +1,26 @@
 package org.iit.sandrammp.patientModuleTest;
 import java.util.List;
-import org.iit.sandrammp.helper.mmpHelperClass;
+import org.iit.sandrammp.helper.HelperClass;
 import org.iit.sandrammp.patientModulePage.SearchSymptomsPage;
+import org.iit.sandrammp.util.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class SearchSymptomsTest {
-	 WebDriver driver;
+public class SearchSymptomsTest extends TestBase{
+	
 	 SearchSymptomsPage ssPage;
-     mmpHelperClass helper;
+     HelperClass helper;
     @Test
     public void validSearchSymptoms() throws Exception {
-    	helper = new mmpHelperClass(driver);
+    	helper = new HelperClass(driver);
     	Thread.sleep(3000);
+    	helper.launchModule("http://96.84.175.78/MMP-Release1-Integrated-Build.2.4.000/portal/profile.php");
     	helper.navigateToModule("Search Symptoms");
     	ssPage = new SearchSymptomsPage(driver);
-        ssPage.enterData("flu");
+        ssPage.enterData("fever");
         //Validating the title of the page
         String actualTitle = driver.getTitle();
         System.out.println("Current title of the page is :" +actualTitle);
@@ -29,7 +31,7 @@ public class SearchSymptomsTest {
         	System.out.println("Test Failed!!");
         }
         
-        List<WebElement> trData = (List<WebElement>) driver.findElement(By.xpath("//table[@class='table']//tbody//tr/td"));
+        List<WebElement> trData = (List<WebElement>)driver.findElement(By.xpath("//table[@class='table']//tbody//tr/td"));
     	 System.out.println("Size of data coloumn is :" +trData);
     	 if (trData.size()==3) {
     		 System.out.println("Data displayed!!");
@@ -38,26 +40,7 @@ public class SearchSymptomsTest {
     		 System.out.println("Data is not displayed!!");
     	 }
    }
-   
-    @Test(priority=5)
-    public void inValidSearchSymptoms() {
-      
-    	driver.findElement(By.xpath("//span[contains(text(),'Search Symptoms')]")).click();
-    	driver.findElement(By.id("search")).click();
-    	driver.findElement(By.id("search")).sendKeys("xyz");
-    	driver.findElement(By.xpath("//input[@name='submit']")).click();
-    	
-    	  String exPectedTitle= driver.getTitle();
-    	  System.out.println("Title of the page is " +exPectedTitle);
-    	  
-    	 
-    	if(exPectedTitle.equals(exPectedTitle)) {
-    		 System.out.println("Invalid input!!Test passed");
-    	 } else {
-    		 System.out.println("Valid Input!! Test failed");
-    	 }
 
-    }
 
 
 }
