@@ -31,7 +31,7 @@ public class HelperClass {
 	}
 	public void navigateToAdminModule(String admModuleName)
 	{
-		driver.findElement(By.xpath("//span[contains(text(),'+admModuleName+')]"));
+		driver.findElement(By.xpath("//span[contains(text(),'"+admModuleName+"')]")).click;
 	}
 	public void captureScreenshot(String tc_Name) throws IOException
 	{
