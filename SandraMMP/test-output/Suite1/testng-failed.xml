@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" guice-stage="DEVELOPMENT" verbose="5">
+  <test thread-count="5" name="Test(failed)" verbose="5">
+    <parameter name="patientName" value="Lauren"/>
+    <parameter name="uName" value="Thomas_444"/>
+    <parameter name="adminurl" value="http://96.84.175.78/MMP-Release1-Integrated-Build.2.4.000/admin/login.php"/>
+    <parameter name="pwd" value="Edison_444"/>
+    <classes>
+      <class name="org.iit.sandrammp.adminModuleTest.CreateFeeTabTest">
+        <methods>
+          <include name="createFee" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="launchdriver"/>
+        </methods>
+      </class> <!-- org.iit.sandrammp.adminModuleTest.CreateFeeTabTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
